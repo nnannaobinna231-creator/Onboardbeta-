@@ -60,10 +60,8 @@ body{
     height: 30px;
 }
 .list p{
-    /* width:552px ; */
     height: 30px;
     text-align: start;
-    /* background-color: aquamarine; */
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
@@ -127,3 +125,4 @@ body{
     text-align: center;
     align-self: stretch;
 }
+
