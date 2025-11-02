@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-top">
+        <div class="profile-top-left">
+          <div><img src="images/Vector.svg" alt="Logo" /></div>
+          <div>
+            <h1>OnboardBeta</h1>
+            <p>Employee Onboarding</p>
+          </div>
+        </div>
+        <div class="profile-top-right">
+          <p>Step 1 of 6</p>
+          <p>17% Complete</p>
+        </div>
+      </div>
+      <div class="check-list">
+        <div class="check-list-container">
+          <div class="check-list-group">
+            <p><span class="check-list-group-num active">1</span>Welcome</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">2</span>Profile</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">3</span>Documents</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">4</span>Tasks</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">5</span>Meet Team</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">6</span>Complete</p>
+          </div>
+        </div>
+        <div class="check-list-progress-bar">
+          <progress value="17" max="100" class="progress">25%</progress>
+        </div>
+      </div>
+      <!-- Profeile set up section -->
+      <div class="profile-setup">
+        <div class="profile-setup-title">
+          <h2>Set Up Your Profile</h2>
+          <p>Let's start with some basic information about you.</p>
+        </div>
+
+        <!-- Form Section -->
+        <form action="#" class="form">
+          <!-- profile-upload  section-->
+          <div class="profile-upload">
+            <div>
+              <div class="profile-upload-avators">
+                <div class="user-avator">
+                  <img
+                    src="images/user-regular-full.svg"
+                    alt="profile avator"
+                  />
+                </div>
+                <div class="upload-arrow">
+                  <input
+                    type="file"
+                    class="profile-picture"
+                    name="profile-picture"
+                    required
+                  />
+                  <label for="profile-picture"
+                    ><i class="ph ph-upload-simple"></i
+                  ></label>
+                </div>
+              </div>
+              <p class="photo-text">Upload your profile photo</p>
+            </div>
+            <!-- employee details -->
+          </div>
+          <div class="form-group1">
+            <div>
+              <label for="fullName">Full Name</label><br />
+              <input
+                type="text"
+                name="fullName"
+                class="fullName"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                name="email"
+                class="email"
+                placeholder="johndoe@gmail.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group1">
+            <div>
+              <label for="department">Department</label><br />
+              <select name="department" id="department" class="select">
+                <option value="frontend">Select Department</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="ui/ux dessign">UI/UD Design</option>
+              </select>
+            </div>
+            <div>
+              <label for="jobTitle">Job Title</label><br />
+              <input
+                type="text"
+                name="jobTitle"
+                class="jobTitle"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group1">
+            <div>
+              <label for="startDate">Start Date</label><br />
+              <input type="date" name="startDate" class="startDate" required />
+            </div>
+            <div>
+              <label for="employmentId">Employment ID</label><br />
+              <input
+                type="text"
+                name="employmentId"
+                class="employmentId"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-btns">
+            <button type="button" class="form-btn-back">
+              <i class="ph ph-arrow-left"></i>Back
+            </button>
+            <button type="submit" class="form-btn-next">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="profile.js"></script>
+  </body>
+</html>
