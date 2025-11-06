@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnboardBeta | Document Upload</title>
+  <link rel="stylesheet" href="uploaddocs.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="images/Onboardsymbol.svg" alt="OnboardBeta Logo">
+      <div>
+        <h2>OnboardBeta</h2>
+        <p>Employee Onboarding</p>
+      </div>
+    </div>
+
+    <div class="progress-info">
+      <p>Step 1 of 6</p>
+      <span>17% Complete</span>
+    </div>
+  </header>
+
+  <nav class="progress-tracker">
+    <div class="step active" data-step="1">1 <span>Welcome</span></div>
+    <div class="step active" data-step="2">2 <span>Profile</span></div>
+    <div class="step" data-step="3">3 <span>Documents</span></div>
+    <div class="step" data-step="4">4 <span>Tasks</span></div>
+    <div class="step" data-step="5">5 <span>Meet Team</span></div>
+    <div class="step" data-step="6">6 <span>Complete</span></div>
+  </nav>
+
+  <main class="container">
+    <section class="upload-card">
+      <h3>Document Upload</h3>
+      <p class="subtitle">Upload your required documents</p>
+
+      <div class="upload-progress">
+        <p>Upload Progress</p>
+        <span id="upload-count">0 of 4 uploaded</span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+
+      <div class="upload-list">
+        <div class="upload-item">
+          <div class="info">
+            <strong>Signed Offer Letter</strong>
+            <span class="required">Required</span>
+            <p>Your signed employment offer letter</p>
+          </div>
+          <button class="upload-btn">⬆ Upload</button>
+        </div>
+
+        <div class="upload-item">
+          <div class="info">
+            <strong>Government-issued ID</strong>
+            <span class="required">Required</span>
+            <p>Valid driver’s license, passport or NIN</p>
+          </div>
+          <button class="upload-btn">⬆ Upload</button>
+        </div>
+
+        <div class="upload-item">
+          <div class="info">
+            <strong>Tax Information</strong>
+            <span class="required">Required</span>
+            <p>W-4 or equivalent tax forms</p>
+          </div>
+          <button class="upload-btn">⬆ Upload</button>
+        </div>
+
+        <div class="upload-item">
+          <div class="info">
+            <strong>Bank Details</strong>
+            <span class="required">Required</span>
+            <p>For direct deposit setup</p>
+          </div>
+          <button class="upload-btn">⬆ Upload</button>
+        </div>
+      </div>
+
+      <div class="doc-security">
+        <div class="icon">!</div>
+        <p>All documents are encrypted and stored securely. Only authorized HR personnel can access your information.</p>
+      </div>
+
+      <div class="actions">
+        <button class="back-btn">← Back</button>
+        <div class="right-btns">
+          <button class="save-btn">Save & Continue Later</button>
+          <button class="next-btn">Next</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
