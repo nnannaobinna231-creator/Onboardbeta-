@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: #3064e8;
+  --background-color: #faf8f6;
+  --text-color: #121212;
+  --progress-bar-color: #d9d9d9;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  background-color: var(--background-color);
+  padding: 1% 5%;
+}
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.profile-top-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.profile-top-left > div > img {
+  width: 40px;
+}
+.profile-top-left h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.profile-top-left p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.profile-top-right {
+  font-size: 10px;
+  text-align: right;
+}
+.check-list-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.progress {
+  width: 100%;
+}
+.check-list-group-num {
+  width: 35px;
+  border-radius: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  color: white;
+}
+.check-list-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.check-list-group hr {
+  width: 100px;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+.active {
+  background-color: var(--primary-color);
+}
+.inActive {
+  background-color: #d9d9d9;
+}
+/* congras section */
+.congras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.checker {
+  background-color: #37b34a;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.fa-check {
+  color: white;
+}
+.complete-quiz {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #000000;
+}
+.complete-quiz h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.complete-quiz p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.continue-btn {
+  background-color: #0365fa;
+  width: 362px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-top: 25px;
+}
