@@ -78,30 +78,32 @@
           <h2>Set Up Your Profile</h2>
           <p>Let's start with some basic information about you.</p>
         </div>
-        <!-- profile-upload  section-->
-        <div class="profile-upload">
-          <div>
-            <div class="profile-upload-avators">
-              <div class="user-avator">
-                <img
-                  id="image-preview"
-                  src="images/user-regular-full.svg"
-                  alt="Employee image"
-                />
-              </div>
-              <div class="upload-arrow">
-                <input type="file" id="image-input" accept="image/*" />
 
-                <label for="profile-picture"
-                  ><i class="ph ph-upload-simple"></i
-                ></label>
-              </div>
-            </div>
-            <p class="photo-text">Upload your profile photo</p>
-          </div>
-        </div>
         <!-- Form Section -->
-        <form action="#" class="form">
+        <form class="form">
+          <!-- profile-upload  section-->
+          <div class="profile-upload">
+            <div>
+              <div class="profile-upload-avators">
+                <div class="user-avator">
+                  <img
+                    class="image-preview"
+                    src="images/user-regular-full.svg"
+                    alt="Employee image"
+                  />
+                </div>
+                <div class="upload-arrow">
+                  <input type="file" class="image-input" accept="image/*" />
+
+                  <label for="profile-picture"
+                    ><i class="ph ph-upload-simple"></i
+                  ></label>
+                </div>
+              </div>
+              <p class="photo-text">Upload your profile photo</p>
+            </div>
+          </div>
+          <!-- user details -->
           <div class="form-group1">
             <div>
               <label for="fullName">Full Name</label><br />
@@ -163,14 +165,12 @@
             </div>
           </div>
           <div class="form-btns">
-            <!-- <button type="button" > -->
             <a href="index.html" class="form-btn-back"
               ><i class="ph ph-arrow-left"></i>Back</a
             >
-
-            <!-- </button> -->
-            <!-- <button type="submit"></button> -->
-            <a href="uploaddocs.html" class="form-btn-next">Next</a>
+            <a href="uploaddocs.html" class="form-btn-next" type="submit"
+              ><button type="submit" class="next-btn">Next</button></a
+            >
           </div>
         </form>
       </div>

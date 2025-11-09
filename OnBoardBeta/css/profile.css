@@ -188,12 +188,20 @@ input[type='date'],
 }
 .form-btn-back {
   border: none;
-  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
+  color: black;
 }
-.form-btn-next {
-  border-radius: 10px;
+.next-btn {
+  width: 100px;
+  height: 50px;
+  border: none;
   background-color: var(--primary-color);
+  border-radius: 10px;
   color: white;
   font-size: 18px;
   border: 1px solid #d9d9d9;
+  text-decoration: none;
+  text-align: center;
 }

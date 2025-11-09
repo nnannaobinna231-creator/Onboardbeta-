@@ -3,13 +3,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', Arial, sans-serif;
 }
-
+:root {
+  --primary-color: #3064e8;
+  --background-color: #faf8f6;
+  --text-color: #121212;
+  --progress-bar-color: #d9d9d9;
+  --completed-color: #2bb048;
+  font-family: 'Inter', sans-serif;
+}
 body {
   background: #f8f9fb;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  overflow-x: none;
 }
 .header-container {
   display: flex;
@@ -77,6 +86,9 @@ body {
 }
 .active {
   background-color: var(--primary-color);
+}
+.completed {
+  background-color: var(--completed-color);
 }
 .inActive {
   background-color: #d9d9d9;

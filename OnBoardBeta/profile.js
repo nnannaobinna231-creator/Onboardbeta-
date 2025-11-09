@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
-const imageInput = document.getElementById('image-input');
-const imagePreview = document.getElementById('image-preview');
+const imageInput = document.querySelector('.image-input');
+const imagePreview = document.querySelector('.image-preview');
 
 //upload profile picture
 imageInput.addEventListener('change', (e) => {
@@ -18,11 +18,12 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const profileArray = [
+    imageInput.value,
     document.querySelector('.fullName').value,
     document.querySelector('.email').value,
     document.querySelector('.department').value,
     document.querySelector('.jobTitle').value,
-    +document.querySelector('.startDate').value,
+    document.querySelector('.startDate').value,
     document.querySelector('.employmentId').value,
   ];
 
