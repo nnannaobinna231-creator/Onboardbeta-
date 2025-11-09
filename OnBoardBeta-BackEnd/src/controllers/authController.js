@@ -57,19 +57,36 @@ const login = async (req, res) => {
   }
 };
 
+const verifyEmail = async (req, res) => {
+  try {
+    const { token } = req.params;
+    
+    const user = await User.findOne({ where: { verificationToken: token } });
+    if (!user) {
+      return res.status(400).json({ error: 'Invalid or expired verification token' });
+    }
+
+    user.verificationToken = null; // Clear the token after verification
+    await user.save();
+
+    res.json({ message: 'Email verified successfully. You can now login.' });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+};
+
 const verifyPasswordChange = async (req, res) => {
   const { token } = req.params;
-  const { newPassword } = req.body;
+  const { password } = req.body;
 
   const user = await User.findOne({ where: { passwordChangeToken: token } });
   if (!user) return res.status(400).json({ error: 'Invalid token' });
 
-  user.password = await bcrypt.hash(newPassword, 10);
+  user.password = await bcrypt.hash(password, 10);
   user.passwordChangeToken = null;
   await user.save();
 
   res.json({ message: 'Password changed successfully' });
 };
 
-
-export { register, login, verifyPasswordChange };
+export { register, login, verifyEmail, verifyPasswordChange };

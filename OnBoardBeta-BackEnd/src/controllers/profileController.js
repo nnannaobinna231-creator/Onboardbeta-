@@ -22,8 +22,8 @@ const changePassword = async (req, res) => {
 
 const getProfile = async (req, res) => {
   try {
-    const user = await User.findByPk(req.user.id, {
-      attributes: ['user_id', 'full_name', 'email']
+   const user = await User.findOne({ where: { user_id: req.user.id } }, {
+      attributes: ['user_id', 'full_name', 'email', 'start_date', 'department', 'job_title', 'employment_id', 'profile_picture']
     });
     if (!user) return res.status(404).json({ error: 'User not found' });
     res.json(user);
