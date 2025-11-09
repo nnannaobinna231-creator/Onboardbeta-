@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
 body {
@@ -11,105 +11,78 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
-/* ======== Header ======== */
-.header {
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: 21px 120px 30px;
+  width: 100vw;
+}
+.check-list-progress-bar {
+  color: #0365fa;
+}
+.profile-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background: #fff;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 5px;
 }
-
-.logo {
+.profile-top-left {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 5px;
 }
-
-.logo img {
-  width: 50px;
-  height: 50px;
+.profile-top-left > div > img {
+  width: 40px;
 }
-
-.logo h2 {
-  font-size: 1.25rem;
-  color: #222;
+.profile-top-left h1 {
+  font-size: 20px;
+  font-weight: 600;
 }
-
-.logo p {
-  font-size: 0.85rem;
-  color: #888;
+.profile-top-left p {
+  font-size: 16px;
+  font-weight: 400;
 }
-
-.progress-info {
+.profile-top-right {
+  font-size: 10px;
   text-align: right;
 }
-
-.progress-info p {
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.progress-info span {
-  color: #007bff;
-  font-size: 0.85rem;
-}
-
-/* ======== Progress Tracker ======== */
-.progress-tracker {
+.check-list-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  padding: 1rem 0;
-  border-bottom: 1px solid #e0e0e0;
-  position: relative;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
-
-.progress-tracker::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  right: 10%;
+.progress {
+  width: 100%;
+  accent-color: var(--primary-color);
+}
+.check-list-group-num {
+  width: 35px;
+  border-radius: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  color: white;
+}
+.check-list-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.check-list-group hr {
+  width: 100px;
   height: 3px;
-  background: #e0e0e0;
-  z-index: 0;
+  background-color: #d9d9d9;
 }
-
-.step {
-  position: relative;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #e0e0e0;
-  color: #555;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 1rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
+.active {
+  background-color: var(--primary-color);
 }
-
-.step span {
-  display: block;
-  position: absolute;
-  top: 50px;
-  font-size: 0.75rem;
-  color: #555;
+.inActive {
+  background-color: #d9d9d9;
 }
-
-.step.active {
-  background: #007bff;
-  color: #fff;
-}
-
-.step.active + .step::before {
-  background: #007bff;
+.cont-div {
+  margin-top: -20px;
 }
 
 /* ======== Main Container ======== */
@@ -122,7 +95,7 @@ body {
 .upload-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   width: 100%;
   max-width: 700px;
   padding: 2rem;
