@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="task.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-top">
+        <div class="profile-top-left">
+          <div><img src="images/Vector.svg" alt="Logo" /></div>
+          <div>
+            <h1>OnboardBeta</h1>
+            <p>Employee Onboarding</p>
+          </div>
+        </div>
+        <div class="profile-top-right">
+          <p>Step 1 of 6</p>
+          <p>17% Complete</p>
+        </div>
+      </div>
+      <div class="check-list">
+        <div class="check-list-container">
+          <div class="check-list-group">
+            <p><span class="check-list-group-num active">1</span>Welcome</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">2</span>Profile</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">3</span>Documents</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">4</span>Tasks</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">5</span>Meet Team</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">6</span>Complete</p>
+          </div>
+        </div>
+        <div class="check-list-progress-bar">
+          <progress value="55" max="100" class="progress">55%</progress>
+        </div>
+      </div>
+      <!-- Profeile set up section -->
+      <div class="task-container">
+        <div class="profile-setup-title">
+          <h2>Your Onboarding Tasks</h2>
+          <p>
+            Complete these tasks to get fully set up. You'll receive reminders
+            for upcoming deadlines.
+          </p>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-check-list">
+            <p>Upload Progress</p>
+            <p class="task-upload">1 of 6 uploads</p>
+          </div>
+          <progress value="17" max="100" class="progress">25%</progress>
+        </div>
+        <!-- task-check-list section -->
+        <div class="task-check-list">
+          <div class="task complete-task">
+            <div class="task-top">
+              <label for="handBook">
+                <input
+                  type="radio"
+                  value="Read Employee Handbook"
+                  checked
+                /><span class="hand-book">Read Employee Handbook</span>
+              </label>
+              <div>
+                <p class="policy">Policy</p>
+              </div>
+            </div>
+            <div class="review-due">
+              <p>Review company policies and guidelines</p>
+              <div class="due">
+                <div><i class="ph ph-clock"></i><span>Due: Day 1</span></div>
+                <div class="complete">
+                  <i class="ph ph-clock"></i
+                  ><span class="complete">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Set Up Work Email -->
+          <div class="task InComplete">
+            <div class="task-top">
+              <label for="workEmail">
+                <input type="radio" value="Set Up Work Email" /><span
+                  class="task-header"
+                  >Set Up Work Email</span
+                >
+              </label>
+              <div>
+                <p class="policy">Tools</p>
+              </div>
+            </div>
+            <div class="review-due">
+              <p>Configure your company email account</p>
+              <div class="due">
+                <div><i class="ph ph-clock"></i><span>Due: Day 1</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Complete Security Training -->
+          <div class="task InComplete">
+            <div class="task-top">
+              <label for="workEmail">
+                <input type="radio" value="Complete Security Training" /><span
+                  class="task-header"
+                  >Complete Security Training</span
+                >
+              </label>
+              <div>
+                <p class="policy">Training</p>
+              </div>
+            </div>
+            <div class="review-due">
+              <p>Mandatory cybersecurity awareness course</p>
+              <div class="due">
+                <div><i class="ph ph-clock"></i><span>Due: Day 1</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Watch Welcome Video -->
+          <div class="task InComplete">
+            <div class="task-top">
+              <label for="workEmail">
+                <input type="radio" value="Watch Welcome Video" /><span
+                  class="task-header"
+                  >Watch Welcome Video</span
+                >
+              </label>
+              <div>
+                <p class="policy">Culture</p>
+              </div>
+            </div>
+            <div class="review-due">
+              <p>Message from our CEO about our company culture</p>
+              <div class="due">
+                <div><i class="ph ph-clock"></i><span>Due: Day 1</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Compliance Training -->
+          <div class="task InComplete">
+            <div class="task-top">
+              <label for="workEmail">
+                <input type="radio" value="Watch Welcome Video" /><span
+                  class="task-header"
+                  >Compliance Training</span
+                >
+              </label>
+              <div>
+                <p class="policy">Training</p>
+              </div>
+            </div>
+            <div class="review-due">
+              <p>Complete mandatory compliance modules</p>
+              <div class="due">
+                <div><i class="ph ph-clock"></i><span>Due: Day 3</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review Code of Conduct -->
+          <div class="task InComplete">
+            <div class="task-top">
+              <label for="workEmail">
+                <input type="radio" value="Review Code of Conduct" /><span
+                  class="task-header"
+                  >Review Code of Conduct</span
+                >
+              </label>
+              <div>
+                <p class="policy">Policy</p>
+              </div>
+            </div>
+            <div class="review-due">
+              <p>Understand company values and expectations</p>
+              <div class="due">
+                <div><i class="ph ph-clock"></i><span>Due: Day </span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Stay on Track -->
+          <div class="stay-on-track">
+            <div>
+              <i class="ph ph-calendar-blank"></i>
+            </div>
+            <div>
+              <p class="stay-on-track-header">Stay on Track</p>
+              <p class="stay-on-track-text">
+                You'll receive email reminders for upcoming deadlines and
+                overdue tasks.
+              </p>
+            </div>
+          </div>
+          <!-- Task Check list buttons -->
+          <div class="task-check-list-btns">
+            <a href="" class="back"><i class="ph ph-arrow-left"></i>Back</a>
+            <a href="" class="save">Save & Continue later</a>
+            <a href="" class="next">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
