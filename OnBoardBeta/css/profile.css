@@ -169,6 +169,7 @@ body {
 input[type='text'],
 input[type='email'],
 input[type='date'],
+input[type='number'],
 .department {
   padding: 10px;
   width: 386.5px;
@@ -203,5 +204,7 @@ input[type='date'],
   font-size: 18px;
   border: 1px solid #d9d9d9;
   text-decoration: none;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

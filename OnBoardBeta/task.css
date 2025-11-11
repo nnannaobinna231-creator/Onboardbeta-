@@ -72,6 +72,9 @@
 .inActive {
   background-color: #d9d9d9;
 }
+.completed {
+  background-color: #37b34a;
+}
 /* Task checklist section */
 .task-container {
   background-color: white;

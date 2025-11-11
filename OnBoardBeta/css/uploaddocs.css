@@ -246,6 +246,9 @@ body {
   background: #f5f5f5;
   color: #333;
 }
+.back-btn a {
+  text-decoration: none;
+}
 
 .save-btn {
   background: #f1f1f1;
@@ -255,6 +258,9 @@ body {
 .next-btn {
   background: #007bff;
   color: #fff;
+}
+.right-btns a {
+  text-decoration: none;
 }
 
 .next-btn:hover {
