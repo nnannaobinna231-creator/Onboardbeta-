@@ -166,7 +166,7 @@ body {
   border-radius: 10px;
   border: 1px solid #e0e0e0;
 }
-
+/* Working on file uploard now */
 .upload-item .info strong {
   font-size: 1rem;
   color: #333;
@@ -189,15 +189,14 @@ body {
 
 .upload-btn {
   background: #007bff;
+  width: 200px;
+  padding: 10px;
   color: #fff;
   border: none;
-  padding: 0.6rem 1rem;
   border-radius: 6px;
-  font-size: 0.9rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
-
 .upload-btn:hover {
   background: #0056b3;
 }

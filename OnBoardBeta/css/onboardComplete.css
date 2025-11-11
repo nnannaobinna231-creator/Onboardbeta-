@@ -103,7 +103,7 @@ body {
 }
 .congras-content {
   width: 630px;
-  height: 876px;
+
   background-color: white;
   padding: 20px;
   display: flex;
@@ -197,6 +197,7 @@ body {
 }
 .hr-contact {
   padding-top: 15px;
+  margin-bottom: 40px;
 }
 .hr-email {
   color: #0365fa;
