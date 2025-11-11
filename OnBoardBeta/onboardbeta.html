@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnboardBeta - Tasks</title>
+  <link rel="stylesheet" href="./css/onboardbeta.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__logo">
+      <img src="./assests/IMG_9639[1].PNG" alt="OnboardBeta Logo" class="nav__logo-img">
+      <div class="nav__title">
+        <h1 class="nav__brand">OnboardBeta</h1>
+        <p class="nav__subtitle">Employee Onboarding</p>
+      </div>
+    </div>
+    <div class="nav__progress">
+      <span class="nav__step">Step 1 of 6</span>
+      <span class="nav__percent">17% Complete</span>
+    </div>
+  </header>
+
+  <main class="main">
+    <ul class="steps">
+      <li class="item-active">
+        <span class="steps__num">1</span>
+        <span class="steps__label">Welcome</span>
+      </li>
+      <li class="steps__line"></li>
+      <li class="steps__item">
+        <span class="steps__num">2</span>
+        <span class="steps__label">Profile</span>
+      </li>
+      <li class="steps__line"></li>
+      <li class="steps__item">
+        <span class="steps__num">3</span>
+        <span class="steps__label">Documents</span>
+      </li>
+      <li class="steps__line"></li>
+      <li class="steps__item">
+        <span class="steps__num">4</span>
+        <span class="steps__label">Tasks</span>
+      </li>
+      <li class="steps__line"></li>
+      <li class="steps__item">
+        <span class="steps__num">5</span>
+        <span class="steps__label">Meet Team</span>
+      </li>
+      <li class="steps__line"></li>
+      <li class="steps__item">
+        <span class="steps__num">6</span>
+        <span class="steps__label">Complete</span>
+      </li>
+    </ul>
+    <div class="tasks__bar">
+          <div class="tasks-bar-fill"></div>
+        </div>
+
+    <section class="tasks">
+      <h2 class="tasks__title">Your Onboarding Tasks</h2>
+      <p class="tasks__subtitle">
+        Complete these tasks to get fully set up. You’ll receive reminders for upcoming deadlines.
+      </p>
+
+      <div class="tasks__upload">
+        <div class="tasks__upload-header">
+          <p>Upload Progress</p>
+          <span>1 of 6 uploaded</span>
+        </div>
+        <div class="tasks__bar">
+          <div class="tasks-bar-fill"></div>
+        </div>
+      </div>
+
+      <ul class="tasklist">
+        <li class="task-done">
+          <div class="task__main">
+            <input type="radio" checked>
+            <div class="task__info">
+              <del class="task__name">Read Employee Handbook</del>
+              <p class="task__desc">Review company policies and guidelines</p>
+              <span class="task__due">📅 Due: Day 1 • ✅ Completed</span>
+            </div>
+            <span class="task__tag task__tag--policy">Policy</span>
+          </div>
+        </li>
+
+        <li class="task">
+          <div class="task__main">
+            <input type="radio">
+            <div class="task__info">
+              <h3 class="task__name">Set Up Work Email</h3>
+              <p class="task__desc">Configure your company email account</p>
+              <span class="task__due">📅 Due: Day 1</span>
+            </div>
+            <span class="task__tag task__tag--tools">Tools</span>
+          </div>
+        </li>
+
+        <li class="task">
+          <div class="task__main">
+            <input type="radio">
+            <div class="task__info">
+              <h3 class="task__name">Complete Security Training</h3>
+              <p class="task__desc">Mandatory cybersecurity awareness course</p>
+              <span class="task__due">📅 Due: Week 1</span>
+            </div>
+            <span class="task__tag task__tag--training">Training</span>
+          </div>
+        </li>
+
+        <li class="task">
+          <div class="task__main">
+            <input type="radio">
+            <div class="task__info">
+              <h3 class="task__name">Watch Welcome Video</h3>
+              <p class="task__desc">Message from our CEO about our company culture</p>
+              <span class="task__due">📅 Due: Day 1</span>
+            </div>
+            <span class="task__tag task__tag--culture">Culture</span>
+          </div>
+        </li>
+
+        <li class="task">
+          <div class="task__main">
+            <input type="radio">
+            <div class="task__info">
+              <h3 class="task__name">Compliance Training</h3>
+              <p class="task__desc">Complete mandatory compliance modules</p>
+              <span class="task__due">📅 Due: Day 3</span>
+            </div>
+            <span class="task__tag task__tag--training">Training</span>
+          </div>
+        </li>
+
+        <li class="task">
+          <div class="task__main">
+            <input type="radio">
+            <div class="task__info">
+              <h3 class="task__name">Review Code of Conduct</h3>
+              <p class="task__desc">Understand company values and expectations</p>
+              <span class="task__due">📅 Due: Day 2</span>
+            </div>
+            <span class="task__tag task__tag--policy">Policy</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="reminder">
+        <p>🗓️ Stay on Track</p>
+        <span>You’ll receive email reminders for upcoming deadlines and overdue tasks.</span>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn--light">Back</button>
+        <button class="btn btn--light">Save & Continue later</button>
+        <button class="btn btn--primary">Next</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
