@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/onboardingQuiz.css" />
+    <title>Radio Button Quiz Question</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="profile-top">
+        <div class="profile-top-left">
+          <div><img src="images/Onboardsymbol.svg" alt="Logo" /></div>
+          <div>
+            <h1>OnboardBeta</h1>
+            <p>Employee Onboarding</p>
+          </div>
+        </div>
+        <div class="profile-top-right">
+          <p>Step 4 of 6</p>
+          <p>68% Complete</p>
+        </div>
+      </div>
+      <div class="check-list">
+        <div class="check-list-container">
+          <div class="check-list-group">
+            <p><span class="check-list-group-num completed">1</span>Welcome</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num active">2</span>Profile</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">3</span>Documents</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">4</span>Tasks</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">5</span>Meet Team</p>
+            <hr />
+          </div>
+          <div class="check-list-group">
+            <p><span class="check-list-group-num inActive">6</span>Complete</p>
+          </div>
+        </div>
+        <div class="check-list-progress-bar">
+          <progress value="17" max="100" class="progress">25%</progress>
+        </div>
+      </div>
+    </header>
+    <h1>Quiz Question</h1>
+
+    <form id="quizForm">
+      <fieldset>
+        <p>What is the capital of France?</p>
+        <legend>Question 1</legend>
+
+        <input type="radio" id="optionA" name="capital" value="London" />
+        <label for="optionA">London</label><br />
+
+        <input type="radio" id="optionB" name="capital" value="Paris" />
+        <label for="optionB">Paris</label><br />
+
+        <input type="radio" id="optionC" name="capital" value="Rome" />
+        <label for="optionC">Rome</label><br />
+
+        <input type="radio" id="optionD" name="capital" value="Berlin" />
+        <label for="optionD">Berlin</label><br />
+      </fieldset>
+
+      <button type="submit">Submit Answer</button>
+    </form>
+
+    <script>
+      document
+        .getElementById('quizForm')
+        .addEventListener('submit', function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          const selectedOption = document.querySelector(
+            'input[name="capital"]:checked'
+          );
+
+          if (selectedOption) {
+            const userAnswer = selectedOption.value;
+            const correctAnswer = 'Paris'; // Define the correct answer
+
+            if (userAnswer === correctAnswer) {
+              alert('Correct!');
+            } else {
+              alert('Incorrect. The correct answer is Paris.');
+            }
+          } else {
+            alert('Please select an answer.');
+          }
+        });
+    </script>
+  </body>
+</html>

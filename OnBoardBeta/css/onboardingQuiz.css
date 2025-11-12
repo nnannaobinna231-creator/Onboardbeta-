@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #3064e8;
+  --background-color: #faf8f6;
+  --text-color: #121212;
+  --progress-bar-color: #d9d9d9;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  overflow-x: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: 21px 120px 30px;
+  width: 100vw;
+}
+.check-list-progress-bar {
+  color: #0365fa;
+}
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.profile-top-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.profile-top-left > div > img {
+  width: 40px;
+}
+.profile-top-left h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.profile-top-left p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.profile-top-right {
+  font-size: 10px;
+  text-align: right;
+}
+.check-list-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.progress {
+  width: 100%;
+  accent-color: var(--primary-color);
+}
+.check-list-group-num {
+  width: 35px;
+  border-radius: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  color: white;
+}
+.check-list-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.check-list-group hr {
+  width: 100px;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+.active {
+  background-color: var(--primary-color);
+}
+.inActive {
+  background-color: #d9d9d9;
+}
+.completed {
+  background-color: #37b34a;
+}
+.cont-div {
+  margin-top: -20px;
+}
