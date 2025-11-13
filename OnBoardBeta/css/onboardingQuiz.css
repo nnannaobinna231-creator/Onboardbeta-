@@ -101,13 +101,6 @@ body {
   margin: 45px auto;
   padding: 20px;
 }
-.progress-bar {
-  margin-top: 25px;
-}
-.progress-bar-check-list {
-  display: flex;
-  justify-content: space-between;
-}
 .task-upload {
   color: #0365fa;
 }
