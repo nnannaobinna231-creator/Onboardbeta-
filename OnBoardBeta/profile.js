@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+const form = document.querySelector('.form');
 const imageInput = document.querySelector('.image-input');
 const imagePreview = document.querySelector('.image-preview');
 
@@ -14,18 +14,38 @@ imageInput.addEventListener('change', (e) => {
 });
 
 //take input from user
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', async function (event) {
   event.preventDefault();
 
-  const profileArray = [
-    imageInput.value,
-    document.querySelector('.fullName').value,
-    document.querySelector('.email').value,
-    document.querySelector('.department').value,
-    document.querySelector('.jobTitle').value,
-    document.querySelector('.startDate').value,
-    document.querySelector('.employmentId').value,
-  ];
-
-  console.log(profileArray);
+  imageInput.value;
+  const fullName = document.querySelector('.fullName').value;
+  const department = document.querySelector('.department').value;
+  const email = document.querySelector('.email').value;
+  const jobTile = document.querySelector('.jobTitle').value;
+  const StartDate = document.querySelector('.startDate').value;
+  const employmentId = document.querySelector('.employmentId').value;
+  if (
+    !fullName.trim() ||
+    !department.trim() ||
+    !email.trim() ||
+    !jobTile.trim() ||
+    !StartDate.trim() ||
+    !employmentId.trim()
+  )
+    try {
+      const response = await fetch(
+        'https://obb-backend-production.up.railway.app/auth/registe',
+        {
+          method: 'POST',
+          headers: {
+            'Content-type': 'application/JSON',
+          },
+          body: JSON.stringify(data),
+        }
+      );
+      const results = response.json();
+      console.log(results);
+    } catch (error) {
+      console.log(error);
+    }
 });
